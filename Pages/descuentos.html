@@ -6,32 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/ico" href="/favicon.ico" />
+    <link rel="stylesheet" href="./../Assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./../Assets/css/style.css">
     <title>Katun Bebes - Descuentos</title>
 </head>
 
 <body>
-    <header>
-        <div class="menu">
-            <nav>
-                <div class="menu__index">
-                    <a href="./../index.html"><img class="imagenLogo" src="./../Assets/imagenes/USA ESTE BOLUDA.png" alt="Logo de Katun Bebes" class="image__logo"></a>
-                </div>
-                <div class="menu__listas">
-                    <ul class="navBarNav">
-                        <li class="navBarItem"><a class="navBarLink" href="./../index.html">Inicio</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="productos.html">Productos</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="descuentos.html">Descuentos</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="contacto.html">Contacto</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="quienessomos.html">Quienes Somos?</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="./../index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./descuentos.html">Descuentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quienessomos.html">Quienes Somos?</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Búsqueda">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
+    </nav>
     </header>
 
     <main>
-        <img class= "imageSale" src="./../Assets/imagenes/sale.png" alt="Sale oferta" class="card__image">
+        <img class="imageSale" src="./../Assets/imagenes/sale.png" alt="Sale oferta" class="card__image">
         <div>
             <h1>Productos con Descuento</h1>
         </div>
@@ -39,41 +56,48 @@
             <label for="options">Ordenar por:</label>
             <input type="search" name="options">
         </div>
-        <div class="flex__container">
-            <div class="card__product">
-                <img src="./../Assets/imagenes/producto destacado1.jpeg"
-                    alt="Bebé con lentes, vestido con un body y short de sandías" class="card__product__image">
-                <h2 class="card__product2">Body Facha</h2>
-                <h3>$1800</h3>
+        <div class="productos__descuento">
+            <div class="card" style="width: 240px;">
+                <img src="./../Assets/imagenes/producto destacado1.jpeg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title">15% OFF</h5>
+                    <p class="card-text">Body temporada Primavera-Verano en liquidación</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
             </div>
 
-            <div class="card__product">
-                <img src="./../Assets/imagenes/producto destacado 2.jpeg" alt="Bebé con un body de paltas"
-                    class="card__product__image">
-                <h2 class="card__product2">Body Palta Love</h2>
-                <h3>$1800</h3>
+
+            <div class="card" style="width: 240px;">
+                <img src="./../Assets/imagenes/producto destacado 2.jpeg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title">15% OFF</h5>
+                    <p class="card-text">Body temporada Primavera-Verano en liquidación</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
             </div>
 
-            <div class="card__product">
-                <img src="./../Assets/imagenes/producto destacado 3.jpeg"
-                    alt="Bebé vestido con un body que tiene una Donuts" class="card__product__image">
-                <h2 class="card__product2">Body I Donut Care</h2>
-                <h3>$1800</h3>
+            <div class="card" style="width: 240px;">
+                <img src="./../Assets/imagenes/producto destacado 3.jpeg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title">15% OFF</h5>
+                    <p class="card-text">Body temporada Primavera-Verano en liquidación</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
             </div>
 
-            <div class="card__product">
-                <img src="./../Assets/imagenes/producto destacado 4.jpeg" alt="3 shorts de bebe"
-                    class="card__product__image">
-                <h2 class="card__product2">Short Pastel</h2>
-                <h3>$1000</h3>
-            </div>
+            <div class="card" style="width: 240px;">
+                <img src="./../Assets/imagenes/producto destacado 4.jpeg" class="card-img-top" alt="...">
 
-            <div class="card__product">
-                <img src="./../Assets/imagenes/producto destacado 5.jpg" alt="Vestido beba rosa"
-                    class="card__product__image">
-                <h2 class="card__product2">Vestido Beba</h2>
-                <h3>$1200</h3>
+                <div class="card-body">
+                    <h5 class="card-title">20% OFF</h5>
+                    <p class="card-text">Short temporada Primavera-Verano en liquidación</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
             </div>
+        </div>
     </main>
 
     <footer>
@@ -90,7 +114,7 @@
                 </div>
             </nav>
         </div>
-            </nav>
+        </nav>
         </div>
 
         <div>

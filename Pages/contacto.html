@@ -5,29 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/ico" href="/favicon.ico" />
+    <link rel="stylesheet" href="./../Assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./../Assets/css/style.css">
     <title>Katun Bebes - Contacto</title>
 </head>
 
 <body>
-    <header>
-        <div class="menu">
-            <nav>
-                <div class="menu__index">
-                    <a href="./../index.html"><img class="imagenLogo" src="./../Assets/imagenes/USA ESTE BOLUDA.png" alt="Logo de Katun Bebes" class="image__logo"></a>
-                </div>
-                <div class="menu__listas">
-                    <ul class="navBarNav">
-                        <li class="navBarItem"><a class="navBarLink" href="./../index.html">Inicio</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="productos.html">Productos</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="descuentos.html">Descuentos</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="contacto.html">Contacto</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="quienessomos.html">Quienes Somos?</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="./../index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./descuentos.html">Descuentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quienessomos.html">Quienes Somos?</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Búsqueda">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
+    </nav>
     </header>
 
     <main>
@@ -37,21 +53,19 @@
         <div class="gridContainer">
             <div class="form">
                 <form class="form__contact">
-                    <div>
-                        <label class="formOne" for="name">Nombre</label>
-                        <input class="formInput" type="name" name="Nombre" id="nombre">
+                    <div class="input-group">
+                        <span class="input-group-text">Nombre y Apellido</span>
+                        <input type="text" aria-label="Nombre" class="form-control">
+                        <input type="text" aria-label="Apellido" class="form-control">
                     </div>
-                    <div>
-                        <label class="formOne" for="lastname">Apellido</label>
-                        <input class="formInput" type="lastname" name="Apellido" id="apellido">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="nombre@ejemplo.com">
                     </div>
-                    <div>
-                        <label class="formOne" for="email">Email</label>
-                        <input class="formInput" type="email" name="Email" id="email">
-                    </div>
-                    <div>
-                        <label class="formOne" for="text">Mensaje</label>
-                        <textarea class="formInput" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                 </form>
             </div>
@@ -75,15 +89,15 @@
 
     <footer>
         <div class="menu">
-                <div class="menu__listas">
-                    <ul class="navBarNav">
-                        <li class="navBarItem"><a class="navBarLink" href="./../index.html">Inicio</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="productos.html">Productos</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="descuentos.html">Descuentos</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="contacto.html">Contacto</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="quienessomos.html">Quienes Somos?</a></li>
-                    </ul>
-                </div>
+            <div class="menu__listas">
+                <ul class="navBarNav">
+                    <li class="navBarItem"><a class="navBarLink" href="./../index.html">Inicio</a></li>
+                    <li class="navBarItem"><a class="navBarLink" href="productos.html">Productos</a></li>
+                    <li class="navBarItem"><a class="navBarLink" href="descuentos.html">Descuentos</a></li>
+                    <li class="navBarItem"><a class="navBarLink" href="contacto.html">Contacto</a></li>
+                    <li class="navBarItem"><a class="navBarLink" href="quienessomos.html">Quienes Somos?</a></li>
+                </ul>
+            </div>
             </nav>
         </div>
 

@@ -6,78 +6,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/ico" href="/favicon.ico" />
+    <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="Assets/css/style.css">
     <title>Katun Bebes - Home</title>
 </head>
 
 <body>
     <header>
-        <div class="menu">
-            <nav>
-                <div class="menu__index">
-                    <a href="index.html"><img class="imagenLogo" src="./Assets/imagenes/USA ESTE BOLUDA.png" alt="Logo de Katun Bebes" class="image__logo"></a>
-                </div>
-                <div class="menu__listas">
-                    <ul class="navBarNav">
-                        <li class="navBarItem"><a class="navBarLink" href="index.html">Inicio</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="./Pages/productos.html">Productos</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="./Pages/descuentos.html">Descuentos</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="./Pages/contacto.html">Contacto</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="./Pages/quienessomos.html">Quienes Somos?</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Pages/descuentos.html">Descuentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Pages/quienessomos.html">Quienes Somos?</a>
+                        </li>
                     </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Búsqueda">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
                 </div>
-            </nav>
-        </div>
-
+            </div>
+        </nav>
     </header>
+
     <main>
-        <section class="card">
-            <img class="imageSale" src="./Assets/imagenes/banner1.png" alt="Banner marca" class="card__image">
-            <img class="imageSale" src="./Assets/imagenes/banner2.png" alt="Banner cuotas sin interés" class="card__image">
-            <img class="imageSale" src="./Assets/imagenes/banner3.png" alt="Banner envío gratis en compras mayores a $5000"
-                class="card__image">
-        </section>
+        <div class="carrouselktn">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Assets/imagenes/banner1.png" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Assets/imagenes/banner2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Assets/imagenes/banner3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
         <section>
 
-            <h1>Productos Destacados</h1>
-            <div class="flex__container">
-                <div class="card__product">
-                    <img src="./Assets/imagenes/producto destacado1.jpeg"
-                        alt="Bebé con lentes, vestido con un body y short de sandías" class="card__product__image">
-                    <h2 class="card__product2">Body Facha</h2>
-                    <h3>$1800</h3>
-                </div>
-
-                <div class="card__product">
-                    <img src="./Assets/imagenes/producto destacado 2.jpeg" alt="Bebé con un body de paltas"
-                        class="card__product__image">
-                    <h2 class="card__product2">Body Palta Love</h2>
-                    <h3>$1800</h3>
-                </div>
-
-                <div class="card__product">
-                    <img src="./Assets/imagenes/producto destacado 3.jpeg"
-                        alt="Bebé vestido con un body que tiene una Donuts" class="card__product__image">
-                    <h2 class="card__product2">Body I Donut Care</h2>
-                    <h3>$1800</h3>
-                </div>
-
-                <div class="card__product">
-                    <img src="./Assets/imagenes/producto destacado 4.jpeg" alt="3 shorts de bebe"
-                        class="card__product__image">
-                    <h2 class="card__product2">Short Pastel</h2>
-                    <h3>$1000</h3>
-                </div>
-
-                <div class="card__product">
-                    <img src="./Assets/imagenes/producto destacado 5.jpg" alt="Vestido beba rosa"
-                        class="card__product__image">
-                    <h2 class="card__product2">Vestido Beba</h2>
-                    <h3>$1200</h3>
+            <h1 class="titulo__index">Productos Destacados</h1>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./Assets/imagenes/producto destacado1.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Body Sandías</h5>
+                                <p class="card-text">$1.800.-</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./Assets/imagenes/producto destacado 2.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional
+                                    content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./Assets/imagenes/producto destacado 3.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This card has even longer content than the first to show that
+                                    equal
+                                    height action.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <nav class="btn">
-                    <a href="./Pages/productos.html"><button value="ver más"> Ver más</button></a>
+                    <a href="./Pages/productos.html"><button type="button" class="btn btn-light">Ver más</button></a>
                 </nav>
         </section>
         </div>
@@ -88,11 +143,12 @@
             <nav>
                 <div class="menu__listas">
                     <ul class="navBarNav">
-                        <li class="navBarItem"><a class= "navBarLink" href="index.html">Inicio</a></li>
-                        <li class="navBarItem"><a class= "navBarLink" href="./Pages/productos.html">Productos</a></li>
-                        <li class="navBarItem"><a class= "navBarLink" href="./Pages/descuentos.html">Descuentos</a></li>
-                        <li class="navBarItem"><a class= "navBarLink" href="./Pages/contacto.html">Contacto</a></li>
-                        <li class="navBarItem"><a class= "navBarLink" href="./Pages/quienessomos.html">Quienes Somos?</a></li>
+                        <li class="navBarItem"><a class="navBarLink" href="index.html">Inicio</a></li>
+                        <li class="navBarItem"><a class="navBarLink" href="./Pages/productos.html">Productos</a></li>
+                        <li class="navBarItem"><a class="navBarLink" href="./Pages/descuentos.html">Descuentos</a></li>
+                        <li class="navBarItem"><a class="navBarLink" href="./Pages/contacto.html">Contacto</a></li>
+                        <li class="navBarItem"><a class="navBarLink" href="./Pages/quienessomos.html">Quienes Somos?</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -111,6 +167,7 @@
             <a href="https://www.facebook.com/katunbebes/" target="_blank">Facebook</a>
         </div>
     </footer>
+    <script src="./Assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     display: inline-block;
     width: 100%;
@@ -15,6 +16,15 @@ header {
     background-color: aquamarine;
     width: 100%;
 }
+
+.titulo__index {
+    margin: 20px;
+}
+
+.carrouselktn{
+padding: 20px;
+}
+
 
 .card__image {
     width: 50%;
@@ -53,6 +63,10 @@ header {
     color: blueviolet;
 }
 
+.card {
+    width: 300px;
+}
+
 .menu__listas {
     width: 100%;
     display: inline-block;
@@ -66,7 +80,9 @@ h1 {
     width: 100%;
 }
 
-
+.productos__descuento{
+    display: grid;
+}
 .card__product {
     display: inline-block;
     margin: 20px;
@@ -78,9 +94,6 @@ h1 {
 
 .flex__container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* align-content: stretch; NO ME CONFIGURA LA MEDIDA IGUAL PARA TODOS*/
 }
 
 .card__product__image {

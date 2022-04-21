@@ -6,28 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/ico" href="/favicon.ico" />
+    <link rel="stylesheet" href="./../Assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./../Assets/css/style.css">
     <title>Katun Bebes - Productos</title>
 </head>
 
 <body>
     <header>
-        <div class="menu">
-            <nav>
-                <div class="menu__index">
-                    <a href="./../index.html"><img class="imagenLogo" src="./../Assets/imagenes/USA ESTE BOLUDA.png" alt="Logo de Katun Bebes" class="image__logo"></a>
-                </div>
-                <div class="menu__listas">
-                    <ul class="navBarNav">
-                        <li class="navBarItem"><a class="navBarLink" href="./../index.html">Inicio</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="productos.html">Productos</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="descuentos.html">Descuentos</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="contacto.html">Contacto</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="quienessomos.html">Quienes Somos?</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="./../index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./descuentos.html">Descuentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienessomos.html">Quienes Somos?</a>
+                        </li>
                     </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Búsqueda">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -35,81 +53,56 @@
             <div>
                 <h1>Nuestros Productos</h1>
             </div>
-            <nav class="card_options">
-                <ul>
-                    <li><a href="">Ajuares de Nacimiento</a></li>
-                    <li><a href="">Bodys y Remeras</a></li>
-                    <li><a href="">Shorts y Pantalones</a></li>
-                    <li><a href="">Vestidos y Jardineros</a></li>
-                    <li><a href="">Para el frío</a></li>
-                    <li><a href="">Trajes de Baño</a></li>
-                    <li><a href="">Accesorios</a></li>
-                </ul>
-            </nav>
         </div>
         <div class="order">
             <label for="options">Ordenar por:</label>
             <input type="search" name="options">
         </div>
         <div class="flex__container">
-            <div class="card__product">
-                <img src="./../Assets/imagenes/producto destacado1.jpeg"
-                    alt="Bebé con lentes, vestido con un body y short de sandías" class="card__product__image">
-                <h2 class="card__product2">Body Facha</h2>
-                <h3>$1800</h3>
+            <div class="card" style="width: 18rem;">
+                <img src="./../Assets/imagenes/producto destacado1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Body Sandías</h5>
+                    <p class="card-text">$1800.-</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
             </div>
 
-            <div class="card__product">
-                <img src="./../Assets/imagenes/producto destacado 2.jpeg" alt="Bebé con un body de paltas"
-                    class="card__product__image">
-                <h2 class="card__product2">Body Palta Love</h2>
-                <h3>$1800</h3>
+            <div class="card" style="width: 18rem;">
+                <img src="./../Assets/imagenes/producto destacado 2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Body Palta Love</h5>
+                    <p class="card-text">$1800.-</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
             </div>
 
-            <div class="card__product">
-                <img src="./../Assets/imagenes/producto destacado 3.jpeg"
-                    alt="Bebé vestido con un body que tiene una Donuts" class="card__product__image">
-                <h2 class="card__product2">Body I Donut Care</h2>
-                <h3>$1800</h3>
-            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./../Assets/imagenes/producto destacado 3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">I donut Care</h5>
+                    <p class="card-text">$1800</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
 
-            <div class="card__product">
-                <img src="./../Assets/imagenes/producto destacado 4.jpeg" alt="3 shorts de bebe"
-                    class="card__product__image">
-                <h2 class="card__product2">Short Pastel</h2>
-                <h3>$1000</h3>
             </div>
-
-            <div class="card__product">
-                <img src="./../Assets/imagenes/producto destacado 5.jpg" alt="Vestido beba rosa"
-                    class="card__product__image">
-                <h2 class="card__product2">Vestido Beba</h2>
-                <h3>$1200</h3>
-            </div>
-            <div class="card__product">
-                <img src="./../Assets/imagenes/producto destacado 3.jpeg"
-                    alt="Bebé vestido con un body que tiene una Donuts" class="card__product__image">
-                <h2 class="card__product2">Body I Donut Care</h2>
-                <h3>$1800</h3>
-            </div>
-
-            <div class="card__product">
-                <img src="./../Assets/imagenes/producto destacado 4.jpeg" alt="3 shorts de bebe"
-                    class="card__product__image">
-                <h2 class="card__product2">Short Pastel</h2>
-                <h3>$1000</h3>
-            </div>
-
-            <div class="card__product">
-                <img src="./../Assets/imagenes/producto destacado 5.jpg" alt="Vestido beba rosa"
-                    class="card__product__image">
-                <h2 class="card__product2">Vestido Beba</h2>
-                <h3>$1200</h3>
-            </div>
-            <nav class="btn">
-                <a href="./../Pages/productos.html"><button value="ver más"> Ver más</button></a>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
             </nav>
-            </section>
         </div>
     </main>
 
