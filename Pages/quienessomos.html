@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="icon" type="image/ico" href="/favicon.ico" />
     <link rel="stylesheet" href="./../Assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./../Assets/css/style.css">
@@ -18,7 +21,7 @@
                 <nav class="navbar navbar-light bg-light">
                     <div class="container">
                         <a class="navbar-brand" href="./../index.html">
-                            <img src="./../Assets/imagenes/USA ESTE BOLUDA.png" alt="" width="100px">
+                            <img src="./../Assets/imagenes/KATUN_Logo_color_43_-removebg-preview.png" alt="logo de la marca" width="100px">
                         </a>
                     </div>
                 </nav>
@@ -58,13 +61,14 @@
         <div>
             <h1>Quienes Somos?</h1>
         </div>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deserunt blanditiis autem voluptatibus culpa
-                non explicabo similique modi officia quo vero, assumenda praesentium! Dignissimos iusto dolorum possimus
-                est consequuntur saepe.
-                Perferendis repellendus sint laudantium labore rem veniam sunt fugiat atque deserunt, dignissimos
-                molestias minus quo amet tempore aperiam mollitia repellat expedita voluptate. Dolorem possimus non
-                perspiciatis molestias. Aliquam, obcaecati alias?</p>
+        <div class="presentacion">
+            <p>Hola! Bienvenidos a KATUN!
+                Somos Rebeca y Catalina, madre e hija. Éste emprendimiento nació en pandemia y con mucho amor. Cata nació en medio del caos y yo quise quedarme con ella siempre y fué así que nació este emprendimiento.
+                Cómo lo dice nuestro inicio, tengo pasión por las infancias y eso queremos transmitir siempre!!
+                Nuestra ropita es de exelente calidad y siempre damos lo mejor.
+                Espero que así sea para todos! 
+                Estamos disponibles para ustedes!! Saludos y Bienvenidos a la familia Katun Bebés 
+            </p>
         </div>
         <div class="card__product2">
             <img src="./../Assets/imagenes/nosotras.png" alt="foto mama y bebe">
@@ -72,33 +76,48 @@
     </main>
 
     <footer>
-        <div class="menu">
-            <nav>
-                <div class="menu__listas">
-                    <ul class="navBarNav">
-                        <li class="navBarItem"><a class="navBarLink" href="./../index.html">Inicio</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="productos.html">Productos</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="descuentos.html">Descuentos</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="contacto.html">Contacto</a></li>
-                        <li class="navBarItem"><a class="navBarLink" href="quienessomos.html">Quienes Somos?</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
-        <div>
-            <form>
-                <label for="email">Recibir Novedades</label>
-                <input type="email" name="email" id="">
-                <input type="submit" name="" id="">
-            </form>
-        </div>
-
-        <div class="social">
-            <a href="https://www.instagram.com/katunbebes/" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com/katunbebes/" target="_blank">Facebook</a>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../Pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../Pages/descuentos.html">Descuentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../Pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../Pages/quienessomos.html">Quienes Somos?</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Búsqueda">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://www.facebook.com/katunbebes"
+                            target="_blank">Facebook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/katunbebes/" target="_blank">Instagram</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://api.whatsapp.com/message/HYFZJ2S5ERPDN1?autoload=1&app_absent=0"
+                            target="_blank">WhatssApp</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
     </footer>
+    <script src="./../Assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
