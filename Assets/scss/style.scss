@@ -1,0 +1,199 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+.titulo__index {
+    margin: 20px;
+}
+
+.carrouselktn{
+padding: 20px;
+}
+
+.card__image {
+    width: 50%;
+    display: inline-block;
+    /* align-content: center; NO PUEDO CENTRAR LA IMAGEN*/
+}
+
+.menu {
+    display: block;
+}
+
+.menu__index {
+    display: inline-block;
+}
+
+.card {
+    width: 300px;
+}
+
+.menu__listas {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #23a6df;
+    font-family: 'Indie Flower', cursive;
+    width: 100%;
+}
+
+.col {
+    padding: 30px;
+}
+
+.card-body {
+    height: 100px;
+    text-align: center;
+}
+
+.productos__descuento{
+    display: grid;
+}
+
+.imageSale {
+    width: 100%;
+}
+
+.card__product2 {
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 50px; /* ESTILIZADO QUIENES SOMOS*/
+}
+
+p {
+    display: inline-block;
+    padding: 5%;
+    text-align: center; /* ESTILIZADO QUIENES SOMOS*/
+}
+
+
+h3 {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    align-content: center;
+}
+
+.social {
+    text-align: right;
+    margin: 10px;
+}
+
+.novedades {
+    margin: 10px;
+}
+
+.card__optios {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+}
+
+.dropdown {
+    padding: 30px;
+    text-align: center;
+}
+
+.netxPage {
+    padding: 30px;
+    text-align: center;
+}
+
+
+/*Estilo MAIN pagina contacto*/
+
+main {
+    background-color: blanchedalmond;
+}
+
+.imagenLogo {
+    height: 150px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+div h1 {
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
+form {
+    display: inline-block;
+    text-align: center;
+}
+
+.form__contact {
+    display: inline-block;
+    align-content: center;
+    border-radius: 5px;
+    padding: 50px;
+    width: 100%;
+}
+
+.cardContact {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.formInput {
+margin: 10px;
+}
+
+.formOne{
+    margin: 10px;    
+}
+
+.formLista {
+    list-style: none;
+
+}
+
+.contactoSect {
+    text-align: center;
+}
+
+/* Estilizado para Media Queris*/
+
+@media screen and (max-width: 400px) {
+    .gridContainer {
+        grid-template-columns: 1;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    footer {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .social{
+        text-align: center;
+    }
+}
