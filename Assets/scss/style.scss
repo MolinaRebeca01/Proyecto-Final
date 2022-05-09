@@ -1,3 +1,5 @@
+@import "./variables";
+
 * {
     margin: 0%;
     padding: 0%;
@@ -5,45 +7,9 @@
 }
 
 body {
-    display: inline-block;
     width: 100%;
     height: 100%;
-}
-
-main {
-    width: 100%;
-}
-
-.titulo__index {
-    margin: 20px;
-}
-
-.carrouselktn{
-padding: 20px;
-}
-
-.card__image {
-    width: 50%;
-    display: inline-block;
-    /* align-content: center; NO PUEDO CENTRAR LA IMAGEN*/
-}
-
-.menu {
-    display: block;
-}
-
-.menu__index {
-    display: inline-block;
-}
-
-.card {
-    width: 300px;
-}
-
-.menu__listas {
-    width: 100%;
-    display: inline-block;
-    text-align: center;
+    background-color: aquamarine;
 }
 
 h1 {
@@ -51,19 +17,11 @@ h1 {
     color: #23a6df;
     font-family: 'Indie Flower', cursive;
     width: 100%;
+    padding: 30px;
 }
 
 .col {
     padding: 30px;
-}
-
-.card-body {
-    height: 100px;
-    text-align: center;
-}
-
-.productos__descuento{
-    display: grid;
 }
 
 .imageSale {
@@ -82,57 +40,52 @@ p {
     text-align: center; /* ESTILIZADO QUIENES SOMOS*/
 }
 
-
 h3 {
     text-align: center;
 }
 
-.btn {
-    display: inline-block;
-    cursor: pointer;
-    align-content: center;
+.boton {
+    background-color: #23a6df;
+    color: white;
+    border: 1px solid gray;
 }
 
-.social {
-    text-align: right;
-    margin: 10px;
+.botonOrden{
+    @extend .boton;
+    background-color: gray;
+    color: black;
+
+    &:hover {
+        color: white;
+    }
 }
 
-.novedades {
-    margin: 10px;
+.nextPage{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
-.card__optios {
-    display: inline-block;
-    text-decoration: none;
-    list-style: none;
+.botonVerMas {
+    @extend .nextPage;
 }
 
 .dropdown {
-    padding: 30px;
     text-align: center;
 }
 
-.netxPage {
-    padding: 30px;
+.card-title {
     text-align: center;
 }
 
+.card-body {
+    @include fontSize(black, center);
+}
 
 /*Estilo MAIN pagina contacto*/
 
 main {
     background-color: blanchedalmond;
-}
-
-.imagenLogo {
-    height: 150px;
-}
-
-.gridContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
 }
 
 div h1 {
@@ -141,10 +94,27 @@ div h1 {
     padding: 50px;
 }
 
-form {
-    display: inline-block;
-    text-align: center;
+/*Estilizado del Formulario página Contacto*/
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
 }
+
+.form {
+    text-align: center;
+    justify-content: left;
+    width: 100%;
+    grid-template-columns:max-content;
+}
+
+.contactoSect {
+    @extend .form;
+    justify-content: right;
+    padding: 50px;
+}
+
 
 .form__contact {
     display: inline-block;
@@ -160,31 +130,19 @@ form {
     padding: 0;
 }
 
-.formInput {
-margin: 10px;
-}
-
-.formOne{
-    margin: 10px;    
-}
-
 .formLista {
     list-style: none;
-
 }
 
-.contactoSect {
-    text-align: center;
+.botonFacebook {
+    color: map-get($map: $redes, $key: Facebook);
+}
+
+.botonInstagram {
+    color: map-get($map: $redes, $key: Instagram );
 }
 
 /* Estilizado para Media Queris*/
-
-@media screen and (max-width: 400px) {
-    .gridContainer {
-        grid-template-columns: 1;
-        width: 100%;
-    }
-}
 
 @media screen and (max-width:600px) {
     footer {
@@ -192,8 +150,4 @@ margin: 10px;
     }
 }
 
-@media screen and (max-width:600px) {
-    .social{
-        text-align: center;
-    }
-}
+/*Estilizado Footer*/

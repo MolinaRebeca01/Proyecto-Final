@@ -1,0 +1,9 @@
+@mixin fontSize ($color, $aling,) {
+    color: $color;
+    text-align: $aling;
+}
+
+$redes: (
+    Facebook: #3b5998,
+    Instagram: #DD2A7B,
+);
